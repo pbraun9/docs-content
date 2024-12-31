@@ -72,14 +72,14 @@ Linux kernel.
     cd linux/
     make revyos_defconfig
     # This can take several hours.
-    make -j
+    make -j4
     sudo make modules_install
     cd ..
     ```
 5. Build OpenSBI.
    ```bash
    cd opensbi/
-   make PLATFORM=generic -j
+   make PLATFORM=generic -j4
    cd ..
    ```
 6. Build and install the FIT image.
